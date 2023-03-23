@@ -4,20 +4,23 @@
     Exit Control  -> do while
 """
 
-# printing one to 10
+# printing 1 to 10
+for i in range(1, 11):
+    print(i)           # indentation is must
 
-for i in range(1,10,1):
-    print(1)  # indentation is must
-
-# Explaination of range function
-
-for i in "TechTribe":
+# printing 0, 2, 4,...10.
+for i in range(0, 11, 2):
     print(i)
 
+# appending the 1 to 10 numbers in list.
+numbers = []
+for i in range(11):
+    numbers.append(i)
+print(numbers)
 
-i=10
 
 # printing 1 to 10 using while.
+i=10
 
 while i>0 :
     print(i)
