@@ -1,0 +1,19 @@
+what is flask?
+
+flask minimal app.
+
+flask structure
+
+bootstrap
+
+jinja2
+
+create post
+
+display post
+
+update post
+
+delete post
+
+wrapping project

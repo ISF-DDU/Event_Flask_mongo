@@ -1,0 +1,22 @@
+form{
+    margin: 2rem 25%;
+}
+
+.post{
+    background-color: rgb(216, 216, 216);
+    margin: 1rem;
+}
+
+h2, p{
+    padding: 0 2rem;
+}
+
+.post a{
+    padding: 0.5rem 0.7rem;
+    margin: 1rem;
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border-radius: 2px;
+}

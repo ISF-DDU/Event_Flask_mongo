@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %} Update Post {% endblock %}
+
+{% block header %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<h1>update post here</h1>
+
+<main>
+    <form action="/update/{{post['_id']}}" method="post">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" value="{{post['title']}}" class="form-control" name="title" id="title">
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea type="text" class="form-control" name="description" id="description" rows="10">{{post['description']}}</textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</main>
+
+{% endblock %}
