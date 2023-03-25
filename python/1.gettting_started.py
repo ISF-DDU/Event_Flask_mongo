@@ -33,3 +33,15 @@ number = int(string)
 # by default input() method takes the input value as string.
 name = input("Enter username : ")
 print(name)
+
+# taking the number input from user.
+number = int(input("Enter the number : "))
+print(number)
+
+# taking 2 inputs at a time
+a, b = map(int, input().split())
+print(a, b)
+
+# taking array as input
+l = list(map(int, input().strip().split()))
+print(l)
