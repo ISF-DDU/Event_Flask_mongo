@@ -1,0 +1,7 @@
+discuss about database
+intro to sql database
+intro to Nosql database
+using mongoDB and pymongo
+performing basic crud operations using shell
+performing basic crud operations using pymongo
+Moving on to atlas :)

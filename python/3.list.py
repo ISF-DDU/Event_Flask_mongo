@@ -13,6 +13,7 @@ print(a)
 # we can add different types of data type elements in same list
 l = [1, 'A', 5.5, "Tech Tribe"]
 print(l)
+print(i for i in l)
 
 # now, we want to update element at index 1
 l[1] = 99.36
