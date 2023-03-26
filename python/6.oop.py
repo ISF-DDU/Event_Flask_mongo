@@ -11,6 +11,9 @@ class Person:
     def toString(self):
         return f"Name: {self.name}, Age: {self.age}"
     
+    # def __str__(self):
+    #     return f"Name: {self.name}, Age: {self.age}"
+    
     def is_adult(self):
         return self.age>=18
 
@@ -18,7 +21,9 @@ class Person:
 person1 = Person("John", 25)
 person2 = Person("Jane", 30)
 
-print(person1.age)
-print(person2.toString())
-print(Person.count)
-print(person2.is_adult())
+print(person1)  # to show the use of __str__ method
+
+# print(person1.age)
+# print(person2.toString())
+# print(Person.count)
+# print(person2.is_adult())
