@@ -8,21 +8,17 @@ class Person:
         self.age = age
         Person.count += 1
 
-    def __str__(self):
+    def toString(self):
         return f"Name: {self.name}, Age: {self.age}"
+    
+    def is_adult(self):
+        return self.age>=18
 
-    @classmethod
-    def get_count(cls):
-        return cls.count
-
-    @staticmethod
-    def is_adult(age):
-        return age >= 18
 
 person1 = Person("John", 25)
 person2 = Person("Jane", 30)
 
-print(person1)
-print(person2)
-print(Person.get_count())
-print(Person.is_adult(person1.age))
+print(person1.age)
+print(person2.toString())
+print(Person.count)
+print(person2.is_adult())
