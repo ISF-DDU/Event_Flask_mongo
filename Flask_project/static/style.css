@@ -7,9 +7,19 @@ form{
     margin: 1rem;
 }
 
+.fix{
+    height:auto;
+    /* height: 150px; */
+    /* overflow-y:scroll; */
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+}
+
 h2, p{
     padding: 0 2rem;
 }
+
 
 .post a{
     padding: 0.5rem 0.7rem;
@@ -18,5 +28,10 @@ h2, p{
     text-transform: none;
     color: white;
     background-color: rgb(27, 27, 27);
-    border-radius: 2px;
+    border-radius: 5px;
+}
+
+.gr-con{
+    display: grid;
+    grid-template-columns: 105px 105px;
 }

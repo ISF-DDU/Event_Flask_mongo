@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 
-{% block title %} Create Post {% endblock %}
+{% block title %} Update Post {% endblock %}
 
 {% block header %} 
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -8,18 +8,18 @@
 
 {% block body %}
 
-<h1>create post here</h1>
+<h1>Update ⚙️</h1>
 
 <main>
-    <form action="/create" method="post">
+    <form action="/update/{{post['_id']}}" method="post">
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" name="title" id="title">
+            <input type="text" value="{{post['title']}}" class="form-control" name="title" id="title">
         </div>
 
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>
-            <textarea type="text" class="form-control" name="description" id="description" rows="10"></textarea>
+            <textarea type="text" class="form-control" name="description" id="description" rows="10">{{post['description']}}</textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
