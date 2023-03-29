@@ -9,7 +9,8 @@ if __name__ == "__main__":
     collection = db["Stores"]
 
     # !this will return only one object data 
-    # one = collection.find_one()
+    one = collection.find()
+    # print( list(one) )
     # print(one)
 
     # !this will return only one object data which matches the passed data
@@ -19,7 +20,7 @@ if __name__ == "__main__":
     # !Here we cannot print directly all the docs and 
     allDocs = collection.find({'Location': 'Jamjodhpur'})
     
-    # print((list(allDocs))) 
+    print((list(allDocs))) 
     print(type(allDocs))
 
     for item in allDocs:

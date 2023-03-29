@@ -8,10 +8,13 @@ if __name__ == "__main__":
     collection = db["Stores"]
 
     # !Delete One 
-    # rec = {"Contact": "Ramu Kaka"}
-    # collection.delete_one(rec)
+    rec = {"Contact": "Ramu Kaka"}
+    up=collection.delete_one(rec)   # is deperecated removeted
 
     # !Delete Many
     # rec = {"Contact": "Ramu Kaka"}
     # up = collection.delete_many(rec)
-    # print(up.deleted_count)
+    print(up.deleted_count)
+
+
+#  bulk_write -> this is used for inserting/updating/deleting multiple records.
