@@ -7,4 +7,3 @@ if __name__ == "__main__":
     print(client)
     db = client["Retailers"]
     collection = db["Stores"]
-

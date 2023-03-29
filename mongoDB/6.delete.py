@@ -15,5 +15,3 @@ if __name__ == "__main__":
     # rec = {"Contact": "Ramu Kaka"}
     # up = collection.delete_many(rec)
     # print(up.deleted_count)
-    
-
