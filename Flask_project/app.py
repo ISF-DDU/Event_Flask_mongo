@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 def get_database():
     client = pymongo.MongoClient("mongodb://localhost:27017")
-    db = client['Blog']
-    collection = db['Posts']
+    db = client['my_diary']
+    collection = db['diaries']
     return collection
 
 
