@@ -9,8 +9,10 @@ if __name__ == "__main__":
     collection = db["Stores"]
 
     # *inserting only one item in database 
-    # dictionary = {'name': 'JC Tyres', 'location': 'Jamjodhpur'}
-    # collection.insert_one(dictionary)
+    dictionary = {'name': 'JC Tyres', 'location': 'Jamjodhpur'}
+    collection.insert_one(dictionary) # insertOne -> mongo shell
+    # db.coll-name.insertOne(some data)
+
 
     # *inserting many items at a time in database 
     insertThese = [

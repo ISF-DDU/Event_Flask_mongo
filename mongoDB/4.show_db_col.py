@@ -7,6 +7,8 @@ if __name__ == "__main__":
     
     allDatabase = client.list_database_names()
     # print(allDatabase['Retailers'])
+    # print(type(allDatabase))
+    print(type(allDatabase[0]))
 
     col = client['Retailers']
-    # print(col.list_collection_names())
+    print(col.list_collection_names())

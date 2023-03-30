@@ -10,7 +10,7 @@ if __name__ == "__main__":
     prev = {"Contact": "Ramu Kaka"}
     nextt = {"$set": {"Location": "Ahemdabad"}}
 
-    up = collection.update_one(prev, nextt)
+    up = collection.update_one(prev, nextt) # updateOne(prev,nextt)
     print(up.modified_count)
 
     # for item in collection:

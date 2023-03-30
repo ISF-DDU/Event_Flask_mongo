@@ -8,6 +8,5 @@ if __name__ == "__main__":
     db = client["Retailers"]
     collection = db["Stores"]
 
-    names = collection.delete_many({"Location" : {"$regex": "^Jam"}})
-
-    # print(list(names))
+    up=collection.delete_many({"Location" : {"$regex": "^Jam"}})
+    print(up.deleted_count)
